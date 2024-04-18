@@ -1,0 +1,936 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>دهب زمان</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/custom-animation.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <link rel="stylesheet" href="assets/css/flaticon.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/meanmenu.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/style-ar.css">
+
+</head>
+
+<body>
+
+   <!-- preloader -->
+   <div id="preloader">
+      <div class="preloader">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+   <!-- preloader end  -->
+
+
+   <!-- back-to-top-start  -->
+   <button class="scroll-top scroll-to-target" data-target="html">
+      <i class="far fa-angle-double-up"></i>
+   </button>
+   <!-- back-to-top-end  -->
+   <div class="search__popup">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-12">
+               <div class="search__wrapper">
+                  <div class="search__top d-flex justify-content-between align-items-center">
+                     <div class="search__logo">
+                        <a href="#">
+                           <img src="assets/img/logo-white.png" alt="">
+                        </a>
+                     </div>
+                     <div class="search__close">
+                        <button type="button" class="search__close-btn search-close-btn">
+                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>                                 
+                        </button>
+                     </div>
+                  </div>
+                  <div class="search__form">
+                     <form action="#">
+                        <div class="search__input">
+                           <input class="search-input-field" type="text" placeholder="عن ماذا تبحث ؟">
+                           <span class="search-focus-border"></span>
+                           <button type="submit">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg> 
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <header class="tp-header-height">
+      <div class="header-top d-none d-lg-block">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-10 col-12">
+                  <div  class="price-live-content">
+                     <div class="count-label">
+                        <p>  تحديث السعر</p>
+                        <div id="countdown"></div>
+                     </div>
+                     <ul class="prices-every">
+                        <li class="price-item">
+                           <a href="#" class="price-item-label">
+                              <span>سعر الدهب</span>
+                              <span class="result">2952.26/oz
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#21B641"
+                                    class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                    <path
+                                       d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                 </svg>
+                              </span>
+                           </a>
+                        </li>
+                        <li class="price-item">
+                           <a href="#" class="price-item-label">
+                              <span>سعر الفضة</span>
+                              <span class="result">36.32/oz 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="#21B641" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                    <path
+                                       d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                 </svg>
+                              </span>
+                           </a>
+                        </li>
+                        <li class="price-item">
+                           <a href="#" class="price-item-label">
+                              <span>سعر البلاتين</span>
+                              <span class="result">1533.37/oz 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="#21B641" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                    <path
+                                       d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                 </svg>
+                              </span>
+                           </a>
+                        </li>
+                        <li class="price-item">
+                           <a href="#" class="price-item-label">
+                              <span>سعر البلاديوم</span>
+                              <span class="result">2289.55/oz 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="#21B641" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                    <path
+                                       d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                 </svg>
+                              </span>
+                           </a>
+                        </li>
+                        <li class="price-item">
+                           <select class="curreny-select">
+                              <option value="0">USD</option>
+                              <option value="1">HKD</option>
+                              <option value="2">CNY</option>
+                           </select>
+                        </li>
+                        <li class="price-item">
+                           <a href="#" class="price-item-label">
+                              <span>معدل الفوركس</span>
+                              <span class="result">0.6682
+                              </span>
+                           </a>
+                        </li>
+   
+                     </ul>
+                  </div>
+               
+
+               </div>
+               <div class="col-md-2">
+                  <div class="dropdown dropdown-lang">
+                     <button class="btn-lang dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/img/002-egypt.png">
+                        العربية
+                     </button>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                       <li><a class="dropdown-item" href="#">
+                        <img src="assets/img/001-united-kingdom.png">
+                        EN
+                       </a></li>
+                     </ul>
+                   </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-header-area-start -->
+      <div id="header-sticky"
+         class="header-bottom__area header-blur header-bottom__transparent z-index-3">
+         <div class="container">
+            <div class="row g-0 align-items-center">
+               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
+                  <div class="header-bottom__logo">
+                     <a class="white-logo" href="index.html"><img src="assets/img/logo-white.png" alt=""></a>
+                  </div>
+               </div>
+               <div class="col-xxl-7 col-xl-7 col-lg-7 d-none d-lg-block">
+                  <div class="header-bottom__main-menu header-bottom__main-menu-4">
+                     <nav id="mobile-menu">
+                        <ul>
+                           <li>
+                              <a href="index.html">الرئيسية</a>
+                           </li>
+                           <li>
+                              <a href="#">من نحن</a>
+                           </li>
+                           <li>
+                              <a href="products.html">المنتجات</a>
+                              <ul class="submenu">
+                                 <li><a href="products.html">عملات</a></li>
+                                 <li><a href="products.html">عملات</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="faq.html">الاسئلة الشائعة</a>
+                           </li>
+                           <li>
+                              <a href="blogs.html">الأخبار</a>
+                           </li>
+
+                           <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-6">
+                  <div class="header-bottom__right d-flex align-items-center justify-content-end">
+                     
+                     <div class="header-bottom__btn d-flex align-items-center">
+                        <a class="d-none d-md-inline-block search-open-btn" href="javascript:void(0)">
+                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M8.6 16.2C12.7974 16.2 16.2 12.7974 16.2 8.6C16.2 4.40264 12.7974 1 8.6 1C4.40264 1 1 4.40264 1 8.6C1 12.7974 4.40264 16.2 8.6 16.2Z"
+                                 stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M16.9999 17L15.3999 15.4" stroke="#fff" stroke-width="1.5"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </a>
+                        <a class="tp-btn-yellow tp-btn-hover alt-color-white d-none d-md-inline-block" href="login.html">
+                           <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M7 8C8.92882 8 10.4924 6.433 10.4924 4.5C10.4924 2.567 8.92882 1 7 1C5.07118 1 3.50757 2.567 3.50757 4.5C3.50757 6.433 5.07118 8 7 8Z"
+                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                 stroke-linejoin="round"></path>
+                              <path d="M13 15C13 12.291 10.3108 10.1 7 10.1C3.68917 10.1 1 12.291 1 15"
+                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                 stroke-linejoin="round"></path>
+                           </svg>
+                           <span>تسجيل الدخول</span>
+                           <b></b>
+                        </a>
+                        <a class="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i
+                              class="fal fa-bars"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-header-area-end -->
+   </header>
+
+   <!-- tp-offcanvus-area-start -->
+   <div class="tpoffcanvas-area">
+      <div class="tpoffcanvas">
+         <div class="tpoffcanvas__close-btn">
+            <button class="close-btn"><i class="fal fa-times"></i></button>
+         </div>
+         <div class="tpoffcanvas__logo text-center">
+            <a href="index.html">
+               <img src="assets/img/logo-white.png" alt="">
+            </a>
+         </div>
+         <div class="mobile-menu"></div>
+         <div class="tpoffcanvas__social">
+            <div class="social-icon text-center">
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-facebook-square"></i></a>
+               <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
+
+   <div id="smooth-content">
+
+
+      <main class="fix">
+         <div class="about-banner-area p-relative">
+             <div class="about-banner p-relative z-index fix">
+                <div class="container">
+                   <div class="row wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".4s">
+                      <div class="col-xl-12">
+                         <div class="about-banner-content">
+                            <h4 class="about-banner-title">
+                                اسم المقال
+                            </h4>
+                         </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <div class="breadcrumb__content">
+                            <div class="breadcrumb__list">
+                               <span class="child-one"><a href="#">الرئيسية</a></span>
+                               <span class="dvdr"><i class="fal fa-angle-right"></i></span>
+                               <span class="child-one"><a href="#">المقالات</a></span>
+                               <span class="dvdr"><i class="fal fa-angle-right"></i></span>
+                               <span>اسم المقال</span>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                 
+                </div>
+             </div>
+          </div>
+
+      
+          <div class="postbox__area pt-50 pb-50">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xxl-8 col-xl-8 col-lg-8">
+                     <div class="postbox__details-wrapper pr-20">
+                        <article>
+                           <div class="postbox__thumb w-img">
+                              <a href="#">
+                                 <img src="assets/img/img2.jpg" alt="">
+                              </a>
+                           </div>
+                           <div class="postbox__details-title-box pb-20">
+                              <h4 class="postbox__details-title">التقرير اليومي لحركة الذهب – 23 مارس
+                                2023</h4>
+                              <p>
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام 
+                              </p>
+                              <p>
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام 
+                              </p>
+                           </div>
+                           <div class="postbox__details-checkmark">
+                              <ul>
+                                 <li><i class="fal fa-check"></i>هناك حقيقة مثبتة منذ زمن طويل</li>
+                                 <li><i class="fal fa-check"></i>هناك حقيقة زمن طويل وهي أن المحتوى المقروء</li>
+                                 <li><i class="fal fa-check"></i>هناك حقيقة مثبتة منذ وهي أن المحتوى المقروء</li>
+                                 <li><i class="fal fa-check"></i> وهي أن المحتوى المقروء</li>
+                              </ul>
+                           </div>
+                           <div class="postbox__details-title-box pb-20">
+                              <h4 class="postbox__details-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء</h4>
+                              <p>
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً 
+                              </p>
+                              <p class="mb-0">
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي 
+                              </p>
+                           </div>
+                         
+                           <div class="postbox__details tagcloud mb-20">
+                              <span>علامات :</span>
+                              <a href="#">سبائك</a>
+                              <a href="#">عملات</a>
+                              <a href="#">دهب</a>
+                              <a href="#">فضة</a>
+                           </div>
+                           <hr>
+                           <div class="postbox__comment mb-65">
+                              <h3 class="postbox__comment-title">4 تعليقات</h3>
+                              <ul>
+                                 <li>
+                                    <div class="postbox__comment-box d-flex">
+                                       <div class="postbox__comment-info ">
+                                          <div class="postbox__comment-avater mr-20">
+                                             <img src="assets/img/avatar1.png" alt="">
+                                          </div>  
+                                       </div>
+                                       <div class="postbox__comment-text">
+                                          <div class="postbox__comment-name d-flex">
+                                             <h5>محمد علي</h5>
+                                             <span class="post-meta"> 8 أبريل 2022 الساعة 7:38 صباحًا</span>
+                                          </div>
+                                          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. </p>
+                                          <div class="postbox__comment-reply">
+                                             <a href="#">
+                                                <svg width="12" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M5 1L1 5L5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M1 5.00024L9 5.00024C10.3333 5.00024 13 5.80025 13 9.00025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg> 
+                                                رد
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="children">
+                                    <div class="postbox__comment-box  d-flex">
+                                       <div class="postbox__comment-info">
+                                          <div class="postbox__comment-avater mr-20">
+                                             <img src="assets/img/avatar2.png" alt="">
+                                          </div> 
+                                       </div>
+                                       <div class="postbox__comment-text">
+                                          <div class="postbox__comment-name d-flex">
+                                             <h5>أسامه أحمد</h5>
+                                             <span class="post-meta"> 14 يوليو 2022</span>
+                                          </div>
+                                          <p>
+                                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+                                          </p>
+                                          <div class="postbox__comment-reply">
+                                             <a href="#">
+                                                <svg width="12" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M5 1L1 5L5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M1 5.00024L9 5.00024C10.3333 5.00024 13 5.80025 13 9.00025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg> 
+                                                رد  
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="postbox__comment-box d-flex">
+                                       <div class="postbox__comment-info ">
+                                          <div class="postbox__comment-avater mr-20">
+                                             <img src="assets/img/avatar1.png" alt="">
+                                          </div>  
+                                       </div>
+                                       <div class="postbox__comment-text">
+                                          <div class="postbox__comment-name d-flex">
+                                             <h5>محمد علي</h5>
+                                             <span class="post-meta"> 8 أبريل 2022 الساعة 7:38 صباحًا</span>
+                                          </div>
+                                          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. </p>
+                                          <div class="postbox__comment-reply">
+                                             <a href="#">
+                                                <svg width="12" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path d="M5 1L1 5L5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                   <path d="M1 5.00024L9 5.00024C10.3333 5.00024 13 5.80025 13 9.00025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg> 
+                                                رد
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="postbox__comment-form">
+                              <h3 class="postbox__comment-form-title">اترك تعليق</h3>
+                              <form action="#" class="box">
+                                 <div class="row gx-20">
+                                    <div class="col-xxl-4 col-xl-6 col-lg-4">
+                                       <div class="postbox__comment-input mb-35">
+                                          <input type="text" class="inputText" required>
+                                          <span class="floating-label">الاسم بالكامل</span>
+                                       </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-4">
+                                       <div class="postbox__comment-input mb-35">
+                                          <input type="text" class="inputText" required>
+                                          <span class="floating-label">البريد الالكتروني</span>
+                                       </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-4">
+                                       <div class="postbox__comment-input mb-35">
+                                          <input type="text" class="inputText" required>
+                                          <span class="floating-label">رقم الهاتف</span>
+                                       </div>
+                                    </div>
+                                    <div class="col-xxl-12">
+                                       <div class="postbox__comment-input mb-20">
+                                          <textarea class="textareaText" required></textarea>
+                                          <span class="floating-label-2">تعليقك</span>
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="col-xxl-12">
+                                       <div class="postbox__comment-btn">
+                                          <button type="submit" class="tp-btn-inner">أضف تعليقا</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-4">
+                     <div class="sidebar__wrapper">
+                        <div class="sidebar__widget mb-20">
+                           <div class="sidebar__widge-title-box">
+                              <h3 class="sidebar__widget-title">بحث</h3>
+                           </div>
+                           <div class="sidebar__widget-content">
+                              <div class="sidebar__search">
+                                 <form action="#">
+                                    <div class="sidebar__search-input-2">
+                                       <input type="text" placeholder="عن ماذا تبحث ....">
+                                       <button type="submit">
+                                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M8.01371 15.2219C11.9525 15.2219 15.1456 12.0382 15.1456 8.11096C15.1456 4.18368 11.9525 1 8.01371 1C4.07488 1 0.881836 4.18368 0.881836 8.11096C0.881836 12.0382 4.07488 15.2219 8.01371 15.2219Z" stroke="#5F6168" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <path d="M16.9287 16.9996L13.0508 13.1331" stroke="#5F6168" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sidebar__widget mb-20">
+                           <div class="sidebar__widge-title-box">
+                              <h3 class="sidebar__widget-title">أخر الأخبار</h3>
+                           </div>
+                           <div class="sidebar__widget-content">
+                              <div class="sidebar__post rc__post">
+                                 <div class="rc__post mb-20 d-flex">
+                                    <div class="rc__post-thumb fix mr-20">
+                                       <a href="#"><img src="assets/img/p1.webp" alt=""></a>
+                                    </div>
+                                    <div class="rc__post-content">
+                                       <h3 class="rc__post-title">
+                                          <a href="#">التقرير اليومي لحركة الذهب</a>
+                                       </h3>
+                                       <div class="rc__meta">
+                                          <span>4 مارس. 2022</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="rc__post mb-20 d-flex">
+                                    <div class="rc__post-thumb fix mr-20">
+                                       <a href="#"><img src="assets/img/img2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="rc__post-content">
+                                       <h3 class="rc__post-title">
+                                          <a href="#">التقرير اليومي </a>
+                                       </h3>
+                                       <div class="rc__meta">
+                                          <span>4 مارس. 2022</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="rc__post mb-20 d-flex">
+                                    <div class="rc__post-thumb fix mr-20">
+                                       <a href="#"><img src="assets/img/p1.webp" alt=""></a>
+                                    </div>
+                                    <div class="rc__post-content">
+                                       <h3 class="rc__post-title">
+                                          <a href="#">التقرير اليومي لحركة الذهب</a>
+                                       </h3>
+                                       <div class="rc__meta">
+                                          <span>4 مارس. 2022</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                               
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sidebar__widget mb-20">
+                           <div class="sidebar__widge-title-box">
+                              <h3 class="sidebar__widget-title">تصنيفات</h3>
+                           </div>
+                           <div class="sidebar__widget-content">
+                              <ul>
+                                 <li><a href="#"><span><i class="fal fa-angle-right"></i>دهب</span><span>01</span></a></li>
+                                 <li><a href="#"><span><i class="fal fa-angle-right"></i>فضة</span><span>02</span></a></li>
+                                 <li><a href="#"><span><i class="fal fa-angle-right"></i>بلاتين</span><span>03</span></a></li>
+                                 <li><a href="#"><span><i class="fal fa-angle-right"></i>سبائك</span><span>04</span></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="sidebar__widget mb-20">
+                           <div class="sidebar__widge-title-box">
+                              <h3 class="sidebar__widget-title">علامات تجارية</h3>
+                           </div>
+                           <div class="sidebar__widget-content">
+                              <div class="tagcloud">
+                                 <a href="#">تصنيف</a>
+                                 <a href="#">دهب</a>
+                                 <a href="#">فضة</a>
+                                 <a href="#">فئة</a>
+                                 <a href="#">تصنيف</a>
+                                 <a href="#">دهب</a>
+                                 <a href="#">فضة</a>
+                                 <a href="#">فئة</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- postbox area end -->
+         
+         <!--Portfolio Start-->
+         <div class="blog-grid-inner bg-light pt-50 pb-50">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="popular-blog-title mb-40 text-center">
+                        <h4>أخبار ذات صلة</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12">
+                     <div class="blog-details-slider-wrapper">
+                        <div class="swiper-container blog-slider-active">
+                           <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                            <div class="tp-blog-four-item p-relative fix">
+                                <div class="tp-blog-four-img fix">
+                                   <a href="#"><img src="assets/img/slider1.jpg" alt=""></a>
+                                </div>
+                                <div class="tp-blog-four-content-wrapper">
+                                   <div class="tp-blog-four-meta">
+                                      <span class="child-2">
+                                         <i class="far fa-calendar"></i> 22 مارس 2023
+                                      </span>
+                                   </div>
+                                   <div class="tp-blog-four-info">
+                                      <h4 class="tp-blog-four-title-sm"><a href="#">التقرير اليومي لحركة الذهب – 23 مارس
+                                            2023</a></h4>
+                                      <p>
+                                         الأخبار المؤثرة: رفع الاحتياطي الفيدرالي الفائدة بمقدار 25 نقطة أساس قرر وهو ما يمثل
+                                         زيادته التاسعة توقعت الأسواق هذا وأصبح أصبح معدل الأموال الفيدرالية الآن في نطاق
+                                         مستهدف جديد يبلغ 4.75 – ٪ 5 ٪ – وهو أعلى معدل منذ عام 2007. كانت هناك بعض التعليقات
+                                         الهامة حيث اشار باول إلى أنه لم ينته من […]
+                                      </p>
+                                   </div>
+                                   <div class="tp-blog-four-btn">
+                                      <a class="tp-blog-link" href="#">
+                                         عرض التفاصيل
+                                         <i class="far fa-angle-left"></i>
+                                      </a>
+                                   </div>
+                                </div>
+                             </div>
+                           </div> 
+                           <div class="swiper-slide">
+                            <div class="tp-blog-four-item p-relative fix">
+                                <div class="tp-blog-four-img fix">
+                                   <a href="#"><img src="assets/img/p1.webp" alt=""></a>
+                                </div>
+                                <div class="tp-blog-four-content-wrapper">
+                                   <div class="tp-blog-four-meta">
+                                      <span class="child-2">
+                                         <i class="far fa-calendar"></i> 22 مارس 2023
+                                      </span>
+                                   </div>
+                                   <div class="tp-blog-four-info">
+                                      <h4 class="tp-blog-four-title-sm"><a href="#">التقرير اليومي لحركة الذهب – 23 مارس
+                                            2023</a></h4>
+                                      <p>
+                                         الأخبار المؤثرة: رفع الاحتياطي الفيدرالي الفائدة بمقدار 25 نقطة أساس قرر وهو ما يمثل
+                                         زيادته التاسعة توقعت الأسواق هذا وأصبح أصبح معدل الأموال الفيدرالية الآن في نطاق
+                                         مستهدف جديد يبلغ 4.75 – ٪ 5 ٪ – وهو أعلى معدل منذ عام 2007. كانت هناك بعض التعليقات
+                                         الهامة حيث اشار باول إلى أنه لم ينته من […]
+                                      </p>
+                                   </div>
+                                   <div class="tp-blog-four-btn">
+                                      <a class="tp-blog-link" href="#">
+                                         عرض التفاصيل
+                                         <i class="far fa-angle-left"></i>
+                                      </a>
+                                   </div>
+                                </div>
+                             </div>
+                           </div> 
+                           <div class="swiper-slide">
+                            <div class="tp-blog-four-item p-relative fix">
+                                <div class="tp-blog-four-img fix">
+                                   <a href="#"><img src="assets/img/slider1.jpg" alt=""></a>
+                                </div>
+                                <div class="tp-blog-four-content-wrapper">
+                                   <div class="tp-blog-four-meta">
+                                      <span class="child-2">
+                                         <i class="far fa-calendar"></i> 22 مارس 2023
+                                      </span>
+                                   </div>
+                                   <div class="tp-blog-four-info">
+                                      <h4 class="tp-blog-four-title-sm"><a href="#">التقرير اليومي لحركة الذهب – 23 مارس
+                                            2023</a></h4>
+                                      <p>
+                                         الأخبار المؤثرة: رفع الاحتياطي الفيدرالي الفائدة بمقدار 25 نقطة أساس قرر وهو ما يمثل
+                                         زيادته التاسعة توقعت الأسواق هذا وأصبح أصبح معدل الأموال الفيدرالية الآن في نطاق
+                                         مستهدف جديد يبلغ 4.75 – ٪ 5 ٪ – وهو أعلى معدل منذ عام 2007. كانت هناك بعض التعليقات
+                                         الهامة حيث اشار باول إلى أنه لم ينته من […]
+                                      </p>
+                                   </div>
+                                   <div class="tp-blog-four-btn">
+                                      <a class="tp-blog-link" href="#">
+                                         عرض التفاصيل
+                                         <i class="far fa-angle-left"></i>
+                                      </a>
+                                   </div>
+                                </div>
+                             </div>
+                           </div> 
+                           <div class="swiper-slide">
+                            <div class="tp-blog-four-item p-relative fix">
+                                <div class="tp-blog-four-img fix">
+                                   <a href="#"><img src="assets/img/p1.webp" alt=""></a>
+                                </div>
+                                <div class="tp-blog-four-content-wrapper">
+                                   <div class="tp-blog-four-meta">
+                                      <span class="child-2">
+                                         <i class="far fa-calendar"></i> 22 مارس 2023
+                                      </span>
+                                   </div>
+                                   <div class="tp-blog-four-info">
+                                      <h4 class="tp-blog-four-title-sm"><a href="#">التقرير اليومي لحركة الذهب – 23 مارس
+                                            2023</a></h4>
+                                      <p>
+                                         الأخبار المؤثرة: رفع الاحتياطي الفيدرالي الفائدة بمقدار 25 نقطة أساس قرر وهو ما يمثل
+                                         زيادته التاسعة توقعت الأسواق هذا وأصبح أصبح معدل الأموال الفيدرالية الآن في نطاق
+                                         مستهدف جديد يبلغ 4.75 – ٪ 5 ٪ – وهو أعلى معدل منذ عام 2007. كانت هناك بعض التعليقات
+                                         الهامة حيث اشار باول إلى أنه لم ينته من […]
+                                      </p>
+                                   </div>
+                                   <div class="tp-blog-four-btn">
+                                      <a class="tp-blog-link" href="#">
+                                         عرض التفاصيل
+                                         <i class="far fa-angle-left"></i>
+                                      </a>
+                                   </div>
+                                </div>
+                             </div>
+                           </div> 
+                          
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+        
+         
+  
+
+      </main>
+
+      <footer>
+
+         <!-- tp-footer-area-start -->
+         <div class="tp-footer__pl-pr z-index">
+            <div class="tp-footer__area tp-footer__border-bottom-4 fix">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".9s"
+                        data-wow-delay=".3s">
+                        <div class="tp-footer__widget footer-widget-4">
+                           <div class="tp-footer__logo mb-25">
+                              <a href="#">
+                                 <img src="assets/img/logo-dark.png" alt="">
+                              </a>
+                           </div>
+                           <p class="footer-des">
+                              دهب زمان هي الشركة المشاركة في المشاركة في مجال المعادن الثمينة والسبائك في الشرق
+                              الأوسط
+                           </p>
+
+
+                           <div class="tp-team-social">
+                              <a class="icon-color-1" href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                                 <span></span>
+                              </a>
+                              <a class="icon-color-2" href="#">
+                                 <i class="fab fa-instagram"></i>
+                                 <span></span>
+                              </a>
+                              <a class="icon-color-3" href="#">
+                                 <i class="fab fa-twitter"></i>
+                                 <span></span>
+                              </a>
+                              <a class="icon-color-4" href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                                 <span></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-5 col-lg-5 col-md-6 wow tpfadeUp" data-wow-duration=".9s"
+                        data-wow-delay=".5s">
+                        <div class="tp-footer__widget footer-widget-4 footer-col-4-2">
+                           <h4 class="tp-footer__widget-title">روابط مفيدة</h4>
+                           <div class="tp-footer__content">
+                              <ul>
+                                 <li><a href="#">من نحن</a></li>
+                                 <li><a href="#">منتجاتنا</a></li>
+                                 <li><a href="#">اتصل بنا</a></li>
+                                 <li><a href="#">الأخبار</a></li>
+                                 <li><a href="#">الشروط والأحكام</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-3 col-md-6 wow tpfadeUp" data-wow-duration=".9s"
+                        data-wow-delay=".7s">
+                        <div class="tp-footer__widget footer-widget-4 footer-col-4-3">
+                           <h4 class="tp-footer__widget-title">تواصل معانا</h4>
+                           <div class="tp-contact-info-box">
+                              <ul>
+                                 <li>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M13.2227 1C13.2227 1 15.9115 1.24444 19.3336 4.66659C22.7558 8.08874 23.0002 10.7776 23.0002 10.7776"
+                                          stroke="#d3ad80" stroke-width="1.5" stroke-linecap="round" />
+                                       <path
+                                          d="M13.4756 5.32031C13.4756 5.32031 14.6855 5.666 16.5004 7.48087C18.3152 9.29574 18.6609 10.5056 18.6609 10.5056"
+                                          stroke="#d3ad80" stroke-width="1.5" stroke-linecap="round" />
+                                       <path
+                                          d="M1.00801 8.25232C0.919597 10.5844 1.50981 14.545 5.48265 18.5178C6.44111 19.4762 7.39885 20.2378 8.33317 20.8405M2.8795 4.59079C4.58196 2.88834 7.29819 3.11708 8.37912 5.05393L9.17234 6.47526C9.88818 7.75793 9.60081 9.44058 8.47337 10.568C8.47337 10.568 8.47337 10.568 8.47337 10.568C8.47325 10.5681 7.10592 11.9357 9.58533 14.4151C12.0641 16.8939 13.4316 15.5279 13.4324 15.5271C13.4324 15.527 13.4324 15.5271 13.4325 15.527C14.5599 14.3996 16.2425 14.1123 17.5252 14.8281L18.9465 15.6213C20.8834 16.7023 21.1121 19.4185 19.4097 21.1209C18.3867 22.1439 17.1335 22.9399 15.7481 22.9924C14.7532 23.0302 13.4619 22.9444 11.9998 22.5251"
+                                          stroke="#d3ad80" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+                                    <a href="tel:(+806)0008899">01212222280</a>
+                                 </li>
+                                 <li>
+                                    <svg width="20" height="20" viewBox="0 0 18 18" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M6.6 8.99922C6.6 9.44105 6.24183 9.79922 5.8 9.79922C5.35817 9.79922 5 9.44105 5 8.99922C5 8.55739 5.35817 8.19922 5.8 8.19922C6.24183 8.19922 6.6 8.55739 6.6 8.99922Z"
+                                          fill="#d3ad80" />
+                                       <path
+                                          d="M9.8 8.99922C9.8 9.44105 9.44183 9.79922 9 9.79922C8.55817 9.79922 8.2 9.44105 8.2 8.99922C8.2 8.55739 8.55817 8.19922 9 8.19922C9.44183 8.19922 9.8 8.55739 9.8 8.99922Z"
+                                          fill="#d3ad80" />
+                                       <path
+                                          d="M13 8.99922C13 9.44105 12.6418 9.79922 12.2 9.79922C11.7582 9.79922 11.4 9.44105 11.4 8.99922C11.4 8.55739 11.7582 8.19922 12.2 8.19922C12.6418 8.19922 13 8.55739 13 8.99922Z"
+                                          fill="#d3ad80" />
+                                       <path
+                                          d="M13 2.07026C11.8233 1.38958 10.4571 1 9 1C4.58172 1 1 4.58172 1 9C1 10.2797 1.30049 11.4893 1.83477 12.562C1.97675 12.847 2.02401 13.1729 1.94169 13.4805L1.46521 15.2613C1.25836 16.0344 1.96561 16.7416 2.73868 16.5348L4.51951 16.0583C4.82715 15.976 5.15297 16.0233 5.43802 16.1652C6.51069 16.6995 7.72025 17 9 17C13.4183 17 17 13.4183 17 9C17 7.54285 16.6104 6.17669 15.9297 5"
+                                          stroke="#d3ad80" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+                                    <a href="mailto:info@dahb.com.eg">info@dahb.com.eg</a>
+                                 </li>
+                                 <li>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M3.69922 6.86317C3.69922 3.62503 6.51983 1 9.99922 1C13.4786 1 16.2992 3.62503 16.2992 6.86317C16.2992 10.0759 14.2885 13.8249 11.1513 15.1656C10.4199 15.4781 9.57849 15.4781 8.84716 15.1656C5.70996 13.8249 3.69922 10.0759 3.69922 6.86317Z"
+                                          stroke="#d3ad80" stroke-width="1.5" />
+                                       <path
+                                          d="M11.7992 7.3C11.7992 8.29411 10.9933 9.1 9.99922 9.1C9.00511 9.1 8.19922 8.29411 8.19922 7.3C8.19922 6.30589 9.00511 5.5 9.99922 5.5C10.9933 5.5 11.7992 6.30589 11.7992 7.3Z"
+                                          stroke="#d3ad80" stroke-width="1.5" />
+                                       <path
+                                          d="M18.0645 13.1504C18.6633 13.6926 19 14.3038 19 14.9504C19 17.1871 14.9706 19.0004 10 19.0004C5.02944 19.0004 1 17.1871 1 14.9504C1 14.3038 1.33671 13.6926 1.93552 13.1504"
+                                          stroke="#d3ad80" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+                                    <a href="#" target="_blank">30 شارع بغداد الكوربة مصر الجديدة ، القاهرة</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="tp-copyright__area wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="tp-copyright__text tp-copyright__text-4 text-center">
+                           <span>© 2023 جميع الحقوق محفوظة</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- tp-footer-area-end -->
+
+      </footer>
+   </div>
+
+   <!------------------- Here is the ticker Part start ------------->
+
+   <div class="ticker_wrapper bd-bottom">
+      <ul id="webTicker">
+
+         <li>
+            سعر الذهب <h3>1,979.07 <span>USD</span></h3>
+            <img class="icon-up" src="assets/img/graph-up.png">
+         </li>
+         <li>
+            سعر الفضة <h3>23.27 <span>USD</span></h3>
+            <img class="icon-up" src="assets/img/graph-up.png">
+         </li>
+         <li>
+            سعر البلاتين <h3>2,2344.07 <span>USD</span></h3>
+            <img class="icon-up" src="assets/img/graph-up.png">
+         </li>
+         <li>
+            قد تختلف الأسعار حسب التغيرات الفورية في السوق ويمكن أن تعمل هذه الأسعار كمرجع ، يرجى الاتصال بنا من خلال
+            رقم خدمة العملاء للحصول على أسعار دقيقة وفورية.
+         </li>
+
+      </ul>
+   </div>
+   <!-- Ticker -->
+
+   <!-- JS here -->
+   <script src="assets/js/jquery.js"></script>
+   <script src="assets/js/waypoints.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/slick.min.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/counterup.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/meanmenu.js"></script>
+   <script src="assets/js/tilt.jquery.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/gsap.min.js"></script>
+   <script src="assets/js/split-text.min.js"></script>
+   <script src="assets/js/ScrollTrigger.min.js"></script>
+   <script src="assets/js/webticker.min.js"></script>
+   <script src="assets/js/countdownTimer.js"></script>
+   <script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+
+
+</html>
